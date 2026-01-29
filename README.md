@@ -69,6 +69,8 @@ This is a performance-oriented, configurable gantry platform for Voron 2.4 and T
 - Z-chain relocation or Z-umbilical is needed on V2
 - Trident rear vertical extrusion brackets have to be rotated by 180 degrees or swapped to regular 2020 brackets based on the gantry configuration
 
+## [FAQ](/Faq.md)
+
 ## Acknowledgement
 I want to thank:
 
