@@ -33,6 +33,8 @@ This is a performance-oriented, configurable gantry platform for Voron 2.4 and T
 
 ### [Configurator and BOM - Google Sheets ](https://docs.google.com/spreadsheets/d/14mWAb1CxOuovr1oKOu4pIA4AFW-SMeCLfFVxeun0VMA/edit?usp=sharing)
 
+### [FAQ](/FAQ.md)
+
 <br/>
 
 > [!NOTE]
@@ -68,8 +70,6 @@ This is a performance-oriented, configurable gantry platform for Voron 2.4 and T
 - Some toolheads are not yet compatible because of the different belt path
 - Z-chain relocation or Z-umbilical is needed on V2
 - Trident rear vertical extrusion brackets have to be rotated by 180 degrees or swapped to regular 2020 brackets based on the gantry configuration
-
-## [FAQ](/FAQ.md)
 
 ## Acknowledgement
 I want to thank:
