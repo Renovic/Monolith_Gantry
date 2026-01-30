@@ -1,12 +1,13 @@
 # FAQ
 
 ## Configuration Options
+
 ### What does NP and FT mean?
 - No Protrusion (NP) means the rear and front motors mounts don't protrude out of the frame perimeter
 - Full Travel (FT) means the motor mounts protrude 4mm out of the frame, but it lets you get full travel (check configurator for distances)
 - What should I pick?
   - If you want to stick with regular panels and don't need the overtravel, choose NP
-  - If you want overtravel, pick FT, you will need either [Monolith Panels](https://github.com/Monolith3D/Monolith_Panels) or 4040 verticals to space out the panels
+  - If you want overtravel, pick FT, you will either need [Monolith Panels](https://github.com/Monolith3D/Monolith_Panels) or 4040 verticals to space out the panels
 
 ### How much overtravel is there?
 - Stock Voron: +10mm
@@ -23,6 +24,7 @@
 - Both have rougly the same performance
 - Sheet metal pulls heat away from motors and doesn't melt, letting you run higher motor currents or hotter chambers
 - Sheet metal is more work, because of reaming bearing holes, countersinking, and harder assembly
+- Sheet metal is also more noisy due to more transfer of vibrations
 
 ### What are long-shaft stepper motors?
 - For 9mm belts, regular stepper shafts (24mm) aren't long enough to reach the double shear bearing
@@ -32,9 +34,9 @@
 - Minimum for 9mm is 37mm (S37)
 - Minimum for 6mm is 35mm (S35)
 - Reccommended motors:
- - OMC 17HS19-2504S-H-V1
- - LDO 42STH48-2504AH (S55)
- - LDO-42STH48-2504AH (S45R) - Monolith edition, with 2M long cables
+   - OMC 17HS19-2504S-H-V1
+   - LDO 42STH48-2504AH (S55)
+   - LDO-42STH48-2504AH (S45R) - Monolith edition, with 2M long cables
 
 ## Sourcing
 
@@ -60,6 +62,7 @@
 - GT3 doesn't signifcantly improve IS results, and requires significantly more tension to match GT2
 - If you want to improve on belts, increasing belt width is more beneficial
 - [Tests](https://monolith-gantry-updates.zen3d.eu/gt3-vs-gt2-epdm-belt-recommendation/)
+- The recommended belts are GT2 EPDM because of temp resistance
 
 ### What preload do I need for rails
 - Y: Rail Z0 / No Preload
@@ -70,6 +73,8 @@
 ## Printing
 
 ### What materials should I use? [^1]
+- Use filled filament for 9/10mm belts, and is recommended for 6mm belts
+- Unfilled abs can crack/split with high belt tension
 - Chamber temp < 65C
   - ABS (don't get filament thats blended or has lots of addatives) 
   - ASA
@@ -92,8 +97,8 @@
   - LCP
   - Realistically, you should do sheetmetal
 
-### What setting should I use?
-- Minimum: 6 walls, 6 top/bottom layers, 60% infill
+### What print settings should I use?
+- 8 walls, 8 top/bottom layers, 40% infill
 
 ## Compatability 
 ### What toolheads can I use?
@@ -125,10 +130,13 @@
 
 <img width="300" alt="Screenshot 2026-01-29 160532" src="https://github.com/user-attachments/assets/be283dfb-eb03-4698-96d5-42196b98dab0" /> <img width="300" alt="Screenshot 2026-01-29 160635" src="https://github.com/user-attachments/assets/fda1d349-ea72-4637-b222-f2da3d12a523" /> 
 
-
 ### How much should I tension my belts?
 - [Belt tension Calculator (Lukes Lab)](https://www.lukeslabonline.com/pages/belt-tension-calculator)
 - For large builds, the built-in tension range isn't enough, so you can use a pretensioner
+
+## What if I want to use endstops for homing?
+- X Endstop:[CAD](CAD/VIII_X_endstop), [STL](STLs/X_endstop_housing.stl)
+- [Y_endstop](CAD/VII_Y_endstop), [STL](STLs/Y_endstop_housing.stl)
 
 ## General Questions
 
@@ -157,11 +165,11 @@
 - [More indepth explanation](https://monolith-gantry-updates.zen3d.eu/com-position-top-vs-front-rail/)
 
 ### Is there a difference between 2.4 and Trident (Flying vs Fixed Gantry)?
-- Trident is more rigid, and has a higher max IS values
+- Trident is more rigid, and has a higher max Input Shaper values
 - However, 2.4 can be upgraded to get to near Trident rigidty using:
   - Rigid Z joints 
   - Double Z joints (2 carriages on each Z rail)
-- There is roughly a 10-15% increase for trident for sufficently rigid printers with:
+- There is roughly a 10-15% increase for Trident for sufficently rigid printers with:
   - 4040 extrusions
   - Structural Panels
   - Double Rigid Z joints for 2.4
