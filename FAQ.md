@@ -37,6 +37,11 @@
    - OMC 17HS19-2504S-H-V1
    - LDO 42STH48-2504AH (S55)
    - LDO-42STH48-2504AH (S45R) - Monolith edition, with 2M long cables
+ 
+### What Z joints should I use for flying gantries?
+- For printed gantries use printed Z joints
+- For sheetmetal use hybrid or slm
+- Double Z joints are recommended for better rigidity
 
 ## Sourcing
 
@@ -130,6 +135,16 @@
 
 <img width="300" alt="Screenshot 2026-01-29 160532" src="https://github.com/user-attachments/assets/be283dfb-eb03-4698-96d5-42196b98dab0" /> <img width="300" alt="Screenshot 2026-01-29 160635" src="https://github.com/user-attachments/assets/fda1d349-ea72-4637-b222-f2da3d12a523" /> 
 
+## What are these clips for?
+- They are spacers for FT mode for flying gantries
+- These are also found within Z-joint spacers in case you forget to print them
+
+<img width="300" height="293" alt="Screenshot 2026-01-30 124453" src="https://github.com/user-attachments/assets/f36208f0-3ca5-471a-a4c7-9212b0cbc990" /> <img width="300" height="293" alt="Screenshot 2026-01-30 123742" src="https://github.com/user-attachments/assets/00f594dd-4058-4886-a0e7-bb5863437e76" />
+
+| NP mode | FT mode |
+| :---: | :---: |
+|  <img width="300" alt="Screenshot 2026-01-30 123721" src="https://github.com/user-attachments/assets/34c86fa5-d8b5-4e11-b064-aebee5f0bfc6" /> | <img width="300" alt="Screenshot 2026-01-30 123708" src="https://github.com/user-attachments/assets/8ab6f6b8-92ed-4f50-8a67-31660c5a70f3" /> |
+
 ### How much should I tension my belts?
 - [Belt tension Calculator (Lukes Lab)](https://www.lukeslabonline.com/pages/belt-tension-calculator)
 - For large builds, the built-in tension range isn't enough, so you can use a pretensioner
@@ -175,4 +190,5 @@
   - Double Rigid Z joints for 2.4
   - Com optimized rigid toolhead
 
+**Written by: Renovic**
 [^1]: Based on Scarecrow's list
